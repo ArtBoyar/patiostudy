@@ -1,25 +1,22 @@
 package HW_1;
 
 import java.util.Scanner;
-
 public class task3 {
 
     public static boolean isSquareOfEachOther(int a, int b) {
-        return (a * a == b || b * b == a);
+        return (a == Math.pow(b, 2) || b == Math.pow(a, 2));
     }
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите первое число: ");
-        int a = scanner.nextInt();
+        int num1 = scanner.nextInt();
 
         System.out.print("Введите второе число: ");
-        int b = scanner.nextInt();
+        int num2 = scanner.nextInt();
 
-        if (isSquareOfEachOther(a, b)) {
-            System.out.println("Одно число является квадратом другого.");
-        } else {
-            System.out.println("Ни одно число не является квадратом другого.");
-        }
+        System.out.println(isSquareOfEachOther(num1, num2));
+
+        scanner.close();
     }
 }
