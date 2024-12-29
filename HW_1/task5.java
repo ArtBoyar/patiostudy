@@ -20,7 +20,7 @@ public class task5 {
         System.out.print("Введите целое число: ");
         int number = scanner.nextInt();
 
-        System.out.println(isEvenSumOfDigits(number) ? "Сумма цифр четная." : "Сумма цифр нечетнаяяяя.");
+        System.out.println(isEvenSumOfDigits(number) ? "Сумма цифр четная." : "Сумма цифр нечетная.");
 
         scanner.close();
     }
