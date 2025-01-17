@@ -1,11 +1,8 @@
-package HW_1;
+package HW_2;
 
 import java.util.Scanner;
-public class task3 {
 
-    public static boolean isSquareOfEachOther(int a, int b) {
-        return (a == Math.pow(b, 2) || b == Math.pow(a, 2));
-    }
+public class task9 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -15,8 +12,13 @@ public class task3 {
         System.out.print("Введите второе число: ");
         int num2 = scanner.nextInt();
 
-        System.out.println(isSquareOfEachOther(num1, num2));
+        String result = checkEvenOrOdd(num1, num2);
+        System.out.println(result);
 
         scanner.close();
+    }
+    public static String checkEvenOrOdd(int num1, int num2) {
+        int sum = num1 + num2;
+        return (sum % 2 == 0) ? "Even" : "Odd";
     }
 }
