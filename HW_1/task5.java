@@ -15,14 +15,9 @@ public class task5 {
         return sum % 2 == 0;
     }
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введите целое число: ");
-        int number = scanner.nextInt();
+        System.out.println(isEvenSumOfDigits(25) ? "Сумма цифр четная." : "Сумма цифр нечетная.");
 
-        System.out.println(isEvenSumOfDigits(number) ? "Сумма цифр четная." : "Сумма цифр нечетная.");
-
-        scanner.close();
     }
 }
 
