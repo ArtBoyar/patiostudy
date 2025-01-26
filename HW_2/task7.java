@@ -14,12 +14,8 @@ public class task7 {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введите число для проверки: ");
-        int number = scanner.nextInt();
-        System.out.println(checkNumber(number));
+        System.out.println(checkNumber(-1));
 
-        scanner.close();
     }
 }

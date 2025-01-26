@@ -20,12 +20,8 @@ public class task13 {
         return originalNumber == reversedNumber;
     }
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введите целое число: ");
-        int number = scanner.nextInt();
-
-        System.out.println(isPalindrome(number));
+        System.out.println(isPalindrome(123321));
     }
 }
 

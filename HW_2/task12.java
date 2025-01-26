@@ -4,21 +4,10 @@ import java.util.Scanner;
 
 public class task12 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Введите первое число: ");
-        int num1 = scanner.nextInt();
-
-        System.out.print("Введите второе число: ");
-        int num2 = scanner.nextInt();
-
-        System.out.print("Введите третье число: ");
-        int num3 = scanner.nextInt();
-
-        int max = findMax(num1, num2, num3);
-
+        int max = findMax(10, 12, 20);
         System.out.println(max);
-        scanner.close();
+
     }
 
     public static int findMax(int a, int b, int c) {
